@@ -40,6 +40,7 @@ def remove_duplicates(list_: list) -> list:
 with open("phonebook1.csv", encoding='utf-8') as f:
     rows = csv.reader(f, delimiter=",")
     contacts_list_11 = list(rows)
+    contacts_list_11 = sorted(contacts_list_11[1:])
 
 contacts_list_1 = remove_duplicates(contacts_list_11 )
 
